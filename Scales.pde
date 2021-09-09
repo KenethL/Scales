@@ -15,15 +15,15 @@ void draw() {
   }
 }
 void scale(int x, int y) {
-  fill(50+random(-50,50),180+random(-60,60),250+random(-40,5));
+  fill(50+(float)(Math.random()*100-50),180+(float)(Math.random()*120-60),250+(float)Math.random()*45-40);
   beginShape();
   curveVertex(x,y);
   curveVertex(x,y);
-  curveVertex(x+random(18,22),y+random(18,22));
-  curveVertex(x+random(18,22),y+random(48,52));
+  curveVertex(x+(float)(Math.random()*4+18),y+(float)(Math.random()*4+18));
+  curveVertex(x+(float)(Math.random()*4+18),y+(float)(Math.random()*4+48));
   curveVertex(x,y+40);
-  curveVertex(x-random(18,22),y+random(48,52));
-  curveVertex(x-random(18,22),y+random(18,22));
+  curveVertex(x-(float)(Math.random()*4+18),y+(float)(Math.random()*4+48));
+  curveVertex(x-(float)(Math.random()*4+18),y+(float)(Math.random()*4+18));
   curveVertex(x,y);
   curveVertex(x,y);
   endShape();
@@ -32,11 +32,11 @@ void scale(int x, int y) {
   beginShape();
   curveVertex(x,y+5);
   curveVertex(x,y+5);
-  curveVertex(x+random(10,15),y+random(15,20));
-  curveVertex(x+random(10,15),y+random(40,45));
+  curveVertex(x+(float)(Math.random()*5+10),y+(float)(Math.random()*5+15));
+  curveVertex(x+(float)(Math.random()*5+10),y+(float)(Math.random()*5+40));
   curveVertex(x,y+35);
-  curveVertex(x-random(10,15),y+random(40,45));
-  curveVertex(x-random(10,15),y+random(15,20));
+  curveVertex(x-(float)(Math.random()*5+10),y+(float)(Math.random()*5+40));
+  curveVertex(x-(float)(Math.random()*5+10),y+(float)(Math.random()*5+15));
   curveVertex(x, y+5);
   curveVertex(x, y+5);
   endShape();
